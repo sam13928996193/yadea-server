@@ -293,7 +293,7 @@ router.get('/info', async(req, res, next)=>{
 router.post('/upload', upload.single('head_img'),async(req, res, next)=>{
   // 文件路径从字符串中public后第1位开始截取
   let imgPath = req.file.path.split('public')[1];
-  let imageUrl = 'http://127.0.0.1:3000' + imgPath;
+  let imageUrl = process.env.SERVICE_URL + imgPath;
   res.send({code:20000,messsage:"上传成功",data:imageUrl});
 });
 // 用户更新接口
