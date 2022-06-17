@@ -148,7 +148,7 @@ router.delete('/option',async(req, res, next)=>{
 router.post('/upload/app', upload.single('file'),async(req, res, next)=>{
   // 文件路径从字符串中public后第1位开始截取
   let imgPath = req.file.path.split('public')[1];
-  let imageUrl = 'http://127.0.0.1:3000' + imgPath;
+  let imageUrl = 'http://8.134.54.84:3000' + imgPath;
   res.send({code:20000,messsage:"上传成功",data:imageUrl});
 });
 
