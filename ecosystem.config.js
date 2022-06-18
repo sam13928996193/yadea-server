@@ -28,7 +28,7 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'administrator',
+      user : 'sam',
       host : ['8.134.54.84'],
       ref  : 'origin/master',
       repo : 'git@github.com:sam13928996193/yadea-server.git',
