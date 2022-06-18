@@ -35,6 +35,7 @@ module.exports = {
       path : '/User/sam/www/yadea',  //放在服务上的路径
       ssh_options:"StrictHostKeyChecking=no",// 设置密钥的检测，
       // 部署后会自动运行的命令
+      'pre-deploy-local': '',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production',
       // 'pre-setup': ''
        "env": {
