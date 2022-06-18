@@ -31,7 +31,7 @@ module.exports = {
       user : 'administrator',
       host : ['8.134.54.84'],
       ref  : 'origin/master',
-      repo : 'https://github.com/sam13928996193/yadea-server.git',
+      repo : 'git@github.com:sam13928996193/yadea-server.git',
       path : '/www/yadea',  //放在服务上的路径
       ssh_options:"StrictHostKeyChecking=no",// 设置密钥的检测，
       'pre-deploy-local': '',
