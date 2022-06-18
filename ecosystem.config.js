@@ -33,7 +33,10 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'git@github.com:sam13928996193/yadea-server.git',
       path : '/User/sam/www/yadea',  //放在服务上的路径
-      ssh_options:"StrictHostKeyChecking=no",// 设置密钥的检测，
+      ssh_options:[// 设置密钥的检测，
+                  "StrictHostKeyChecking=no",
+                  "PasswordAuthentication=no"],
+      key: "/Users/lenovo/.ssh/id_rsa",
       'pre-deploy-local': '',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production',
       // 'pre-setup': ''
