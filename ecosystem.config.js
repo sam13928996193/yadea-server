@@ -32,7 +32,7 @@ module.exports = {
       host : ['8.134.54.84'],//服务器地址
       ref  : 'origin/master',//git上的分支，启动后会将仓库中的文件拉取到远程服务器上github
       repo : 'git@github.com:sam13928996193/yadea-server.git',
-      path : '/c/www/yadea',  //放在服务上的路径
+      path : '/www/yadea',  //放在服务上的路径
       ssh_options:"StrictHostKeyChecking=no",// 设置密钥的检测，
       // 部署后会自动运行的命令
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production',
